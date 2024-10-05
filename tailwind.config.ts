@@ -13,6 +13,8 @@ const config: Config = {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
 				primary: AppColorsTheme.PRIMARY,
+				secondary: AppColorsTheme.SECONDARY,
+				error: AppColorsTheme.ERROR,
 				textPrimary: AppColorsTheme.TEXT_PRIMARY,
 				textSecondary: AppColorsTheme.TEXT_SECONDARY,
 				backgroundPrimary: AppColorsTheme.BACKGROUND_PRIMARY,
