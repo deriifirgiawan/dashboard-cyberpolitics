@@ -1,3 +1,4 @@
+"use client";
 import { Dashboard, DataPolitik, MainLayout } from "@/core";
 
 export default function DataPolitikPage() {
