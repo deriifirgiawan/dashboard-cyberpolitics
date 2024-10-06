@@ -1,9 +1,9 @@
-import { MainLayout } from "@/core";
+import { MainLayout, VolunteerManagement } from "@/core";
 
 export default function ManajementTimKampanyePage() {
 	return (
 		<MainLayout>
-			<h1>Manajemen Tim Kampanye</h1>
+			<VolunteerManagement.SectionList />
 		</MainLayout>
 	);
 }

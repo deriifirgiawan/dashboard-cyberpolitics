@@ -6,7 +6,7 @@ const Map = () => {
 	return (
 		<MapContainer
 			center={[-6.2088, 106.8456]}
-			zoom={8}
+			zoom={12}
 			style={{ height: "600px", width: "100%" }}
 			className="rounded-md"
 		>

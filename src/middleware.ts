@@ -10,6 +10,14 @@ export function middleware(request: NextRequest) {
 		return NextResponse.redirect(new URL("/auth", request.url));
 	}
 
+	// Retrieve token from cookies
+	const token = request.cookies.get("token")?.value;
+
+	// If user tries to access the dashboard without a token, redirect to /auth
+	if (pathname === "/dashboard" && !token) {
+		return NextResponse.redirect(new URL("/auth", request.url));
+	}
+
 	// If no redirect is needed, continue with the request
 	return NextResponse.next();
 }

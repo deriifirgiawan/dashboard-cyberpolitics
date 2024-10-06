@@ -5,7 +5,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 // Registrasi komponen yang diperlukan dari Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const PieChart = () => {
+const PieChart = () => {
 	// Data untuk Pie chart
 	const data = {
 		labels: ["Pria", "Wanita", "Tidak Diketahui"],
@@ -44,3 +44,5 @@ export const PieChart = () => {
 
 	return <Pie data={data} options={options} />;
 };
+
+export default PieChart;

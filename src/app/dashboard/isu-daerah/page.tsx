@@ -1,9 +1,9 @@
-import { MainLayout } from "@/core";
+import { MainLayout, RegionalIssues } from "@/core";
 
 export default function IsuDaerahPage() {
 	return (
 		<MainLayout>
-			<h1>Isue Daerah</h1>
+			<RegionalIssues.SectionContent />
 		</MainLayout>
 	);
 }

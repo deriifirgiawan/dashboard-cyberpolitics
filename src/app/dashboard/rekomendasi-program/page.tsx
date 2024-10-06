@@ -1,9 +1,9 @@
-import { MainLayout } from "@/core";
+import { MainLayout, RecommendProgram } from "@/core";
 
 export default function RekomendasiProgramPage() {
 	return (
 		<MainLayout>
-			<h1>Rekomendasi Program</h1>
+			<RecommendProgram.SectionContent />
 		</MainLayout>
 	);
 }

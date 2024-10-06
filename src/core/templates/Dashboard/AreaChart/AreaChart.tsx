@@ -20,7 +20,7 @@ ChartJS.register(
 	LineElement,
 	Title,
 	Tooltip,
-	Filler, // Filler digunakan untuk area chart
+	Filler,
 	Legend
 );
 
