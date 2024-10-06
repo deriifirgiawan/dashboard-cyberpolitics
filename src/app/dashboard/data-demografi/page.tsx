@@ -1,4 +1,3 @@
-"use client";
 import { MainLayout } from "@/core";
 
 export default function DataDemografiPage() {

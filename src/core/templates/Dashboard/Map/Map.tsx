@@ -2,7 +2,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-export const Map = () => {
+const Map = () => {
 	return (
 		<MapContainer
 			center={[-6.2088, 106.8456]}
@@ -22,3 +22,5 @@ export const Map = () => {
 		</MapContainer>
 	);
 };
+
+export default Map;

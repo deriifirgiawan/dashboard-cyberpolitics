@@ -24,7 +24,7 @@ ChartJS.register(
 	Legend
 );
 
-export const AreaChart = () => {
+const AreaChart = () => {
 	// Data untuk chart
 	const data = {
 		labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -51,3 +51,5 @@ export const AreaChart = () => {
 
 	return <Line data={data} options={options} />;
 };
+
+export default AreaChart;

@@ -1,4 +1,15 @@
 import { Dashboard, MainLayout } from "@/core";
+import dynamic from "next/dynamic";
+
+const AreaChart = dynamic(
+	() => import("@/core/templates/Dashboard/AreaChart/AreaChart"),
+	{
+		ssr: false,
+	}
+);
+const Map = dynamic(() => import("@/core/templates/Dashboard/Map/Map"), {
+	ssr: false,
+});
 
 export default function Home() {
 	return (
@@ -75,7 +86,7 @@ export default function Home() {
 			</section>
 
 			<section className="mt-4 bg-white p-4 rounded-md">
-				<Dashboard.Map />
+				<Map />
 			</section>
 
 			<section className="mt-4 flex gap-2">
@@ -99,7 +110,7 @@ export default function Home() {
 				<h3 className="text-lg font-semibold text-center">
 					Trend Komoditas Bawang Merah
 				</h3>
-				<Dashboard.AreaChart />
+				<AreaChart />
 			</section>
 		</MainLayout>
 	);
